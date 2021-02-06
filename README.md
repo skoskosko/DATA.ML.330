@@ -61,8 +61,12 @@ This should print some output for you to wonder
 
 ### Generating nice pictures
 
+``` sh
+python3 src/make_output.py
+```
 
+Should create files in /output/report folder
 
 ## Knwon limitations
 
-showimage is not working, because current fdisplay is
+showimage is not working, because current display is not linked inside devcontainer
