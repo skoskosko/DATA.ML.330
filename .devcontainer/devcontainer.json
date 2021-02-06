@@ -1,0 +1,16 @@
+{
+    // "dockerComposeFile": "../docker-compose.yml",
+    // "service": "app",
+    "dockerFile": "./Dockerfile",
+    "context": "./",
+    "runArgs": [
+      "--gpus", 
+      "all", 
+      "--ipc=host",
+      "--net", "host", 
+      "-e", "DISPLAY=${env:DISPLAY}",
+      "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+    ],
+    "extensions": ["ms-python.python"],
+    // "workspaceFolder": "/home/root/"
+  }
